@@ -87,3 +87,18 @@ Accumulate interesting data on processed UAV videos and how quickly the algorith
 - I also discovered that if I use object detection and object tracking interchangeably, people who know more about this subject than me get visibly irritated.
 
 I don't have time tonight to really do much else, so it seems I'll be walking in to class with nothing solid to show for myself, but I do feel like I have more direction, and at least I have these journal entries to show for my weeks of work.
+
+
+### March 11th, 2019
+
+I think I'll change up the format of these entries a little bit. First off I need to present more of the resources I'm using and when available, include screen shots of the work I've done so far. I also need to bite the bullet and upload some of my code. Right now my code's a bit scattered, with working examples of various elements here and there. I need to start the actual project and start making code commits.
+
+Secondly, I've spoken to my professors about my lack of progress and they've given me a good suggestion as to how I can maybe cut back on my goals in a reasonable way. I've been focusing for a while now on how to get the various tracking algorithms working, and only recently realized that I would also need to spend a lot of time learning to train the algorithms to work with UAV videos. While this was a main component of the project, it would take a long time, and the main focus of this project should be on making a program. Training algorithms is nice and if I have time I'd love to get to that, but I can always train algorithms later after I have a functional program that I can show off. After all, a program using pre-trained algorithms can still be used to sample those algorithms, but a collection of trained algorithms without a program to view them makes for a poor presentation.
+
+So my Milestone 1 presentation should reflect this change. That presentation will be happening on March 13th. In the meantime, I need to build something I can show off. Let me list the requirements for my first prototype:
+
+1. Home page has a button that allows a user to upload a video file.
+2. Program runs the video through a single algorithm, then presents the video with object tracking overlay.
+
+That's the only two things I need for this first part. File upload, algorithm runs on the file, file is displayed. I can build off of that, but this is the bare bones version of things. Tonight I'll try to get a scene with a file button that uploads a file. If that doesn't take too long, I'll start up on getting an algorithm set up in my program. Here I go...
+
