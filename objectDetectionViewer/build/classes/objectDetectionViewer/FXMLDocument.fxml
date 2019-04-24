@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="objectDetectionViewer.FXMLDocumentController">
+   <children>
+      <Button fx:id="openFile" layoutX="562.0" layoutY="710.0" mnemonicParsing="false" onAction="#openFileDialog" text="Open File" />
+      <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="393.0" layoutY="745.0" prefHeight="17.0" prefWidth="414.0" textFill="RED" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="393.0" layoutY="47.0" text="Object Detection Viewer">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <MediaView fx:id="mediaView" fitHeight="600.0" fitWidth="800.0" layoutX="200.0" layoutY="100.0" />
+   </children>
+</AnchorPane>
