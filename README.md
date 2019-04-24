@@ -109,43 +109,36 @@ I don't have time tonight to really do much else, so it seems I'll be walking in
   Eclipse is proving to be something of a problem. I've done a lot of research into JavaFX and FXML, but Eclipse claims it's missing JavaFX resources. This appears to be a common problem with a number of workarounds, but after attempting several of them for an entire day, I decided that it would be better just to try another IDE. I've gone with NetBeans and found that it works perfectly well with all of my required elements, and after setting up all my libraries, I believe this will be perfectly functional. I was rewarded with a very simple but beautiful display:
 
 -----
-
 It took me 30 seconds to make, but that's because I've made this a dozen times in Eclipse already. Now that I know JavaFX can function I'm a bit relieved. I'll work on getting myself caught up to where I was in Eclipse next time.
 
 ### March 17th
   Today I completed the rest of my JavaFX tutorials and I feel like I have a decent enough understanding of how it works. I figure I can use these basic tutorials to get file chooser working, then once I have that in hand, I'll work on the media player a bit.
 
 -----
-
   I've run into a bit of trouble again. It seems that my situation is complicated a bit due to my usage of FXML. I'd like to keep this in my project since it's a useful tool for creating UI, something that I'm always loath to do. It also seems like it'll save me days worth of work when it comes down to editing the minor aspects of UI design. However, I'm having a hard time distinguishing what parts of the program go into the FXML Controller, and which parts should be controlled by the main part of the application. What's more, I don't know how the two communicate. For instance, if I gather something from the user in FXML Controller, how do I use that new data in Main? I'm tempted to just put everything into the FXML Controller, or just find a way to abandon the FXML Controller entirely and just work with Main. Can I ditch the Controller without losing Scene Builder? I'll work on these questions more another day.
 
 ### March 17th
   I'm going to get to the bottom of my FXML Controller mystery and hopefully make enough headway to have a bit more to show for my efforts. Since I didn't make much headway last time I worked I want to just dive right into things.
 
 -----
-
   So from what I've read, it seems that Main has a minimal role in all of this, and I could potentially just run most of my operations through the FXML Controller. There was some talk of using multiple FXML Controllers, but I don't think my program is complicated enough to merit that yet, and I don't want to dive into areas that would complicate this further. My main issue with using FXML Controllers was that I didn't know how to switch between scenes, but I'm going to see if I can't just live with what I've got. For my current goals a single scene should be enough, and there is a risk of including too many scenes.
 
 -----
-
   Alright, things are moving forward. I've implemented File Chooser, and it can indicate what file was chosen, or point out that no file has been chosen. I'll have some time to work on this tomorrow, and I'll get working on the video player.
 
 ### March 19th
 Today's the day when I get this video player working. If I can get this functional, I think I can actually call this a real application. Not a good application, but it has a practical use, which is nice.
 
 -----
-
   Good news and bad news: The chosen file is clearly being used by the application, but only the sound is playing. I'm using JavaFX's MediaPlayer and MediaView, I'll do some troubleshooting and figure this out right quick, but it's getting late and I have time to do this later in the week.
 
 ### March 20th
   It's time to troubleshoot the Media player troubles, and if I can get all of my media trouble sorted out today I think I should still be on schedule.
 
 -----
-
   Success! Albeit, the video is quite tiny, it's clearly playing. I don't have any control over it yet other than opening a file and auto-playing it, but I can sort that out later once I have multiple videos. I could be wrong, but I feel like linking multiple videos up to the same controller might be a bit tricky, so I'd rather not learn how to link up a single player just in case the route I need to take is completely different, which would mean my single video player controller would be a waste of time.
 
 -----
-
   I've adjusted the application so that it's considerably bigger so that the video isn't quite so tiny. It's a good size for a single video. I'll have to take into consideration video sizing. If the video being used has a lot of detail having multiple players going on at once might make it impossible to get a good idea of how well the algorithms are working. I think this is something I'll have to look into later, so I'm adding this to my major objectives:
 
 - Troubleshoot video sizing issues.
@@ -163,6 +156,7 @@ Another issue here is that since my Python knowledge is so limited, I'll only be
 
 ### April 12th
 Judgement day is fast arriving, and I'll need to make major strides this week if I have any hope of achieving my goals. My first goal today is to search for Python solutions to my object detection algorithm problems. I'll need something that processes video files, and I'll need solutions for multiple algorithms. I'm certain this exists out there. Live object detection is the holy grail of object detection, but video processing should be the intermediate step. Off I go. 
+
 ------
 Okay! I think I've got something. The whole world opened up as soon as I stopped asking for Java solutions. It seems if I ever hope to have anything to do with Computer Vision I'll need to learn Python. There are APIs and tutorials in OpenCV where I can get a video output. I can also use Tensorflow. I also found a detailed tutorial that uses YOLO in OpenCV. I also found something called ImageAI. I haven't found much about it other than a couple of fluff articles. However, it offers a simple API that would allow for the usage of YOLOv3, TinyYOLO, and RetinaNet. It has a lot of thorough documentation, so I think this could be easy enough to try out.
 Now...having found some real options, I also looked up some methods for using Python code in a Java program. The first real option I found is something called Jython, which seems to be a sort of bridge that integrates python with the java platform. It's impressive and certainly would solve my problems. 
@@ -179,6 +173,7 @@ https://stackoverflow.com/questions/39628739/java-application-to-start-a-process
 
 ### April 16th
 My next goal is to find another model to use. I've got it set up so that I'm pretty sure I can get it working easily, assuming that I can get a video output like before. If I can find this, then I can work on running multiple videos at the same time, and I'll finally have a barebones version of what I had intended. Also, I think I'd like to implement a textflow box to list all of the details of each model for the user to view. Seeing all of the videos playing won't mean much if they can't see how long it took to process, how sure the algorithm was, and how many frames it chose to measure. But anyway, today the goal is to find other models I can use. 
+
 -----
 So I've found this thing called ImageAI, I believe I mentioned it before. I spent the day trying to get it working, and honestly it was quite straightforward and seemed to offer everything I could possibly want. It gives me a way to input and output video for RetinaNet, Yolo v3, and Tiny-Yolo. Really, it seems like this is all I need to have a halfway decent project ready. I think this might be the key to getting it done on time.
 
@@ -189,7 +184,8 @@ If I want this project to actually become something useful, I need to look for d
 
 ### April 21st
 I've only got three days left before my presentation, and I'm getting a bit worried. I'm going to work hard today and tomorrow to try to get this a bit more presentable, but I'm afraid that most of what I have to present isn't code, but lessons about this entire experience. I hope that'll be enough. I have two days, and then I need to dedicated April 23rd to writing up my presentation. I would've liked to have it done by today, but I'm not confident enough with this project to present it quite yet.
-Today I'll be working on getting the YOLO algorithm to work properly and maybe start work on a text display and a media controller. 
+Today I'll be working on getting the YOLO algorithm to work properly and maybe start work on a text display and a media controller.
+
 -----
 Not a good day's work I'd say. I've got the output working reliably, but with a few test runs I discovered that YOLO doesn't fire off if there are any spaces in the input video file name. I feel like this is something I could solve relatively easily, but I just don't have time to dive into that right now. I need things to show for my work for the presentation tomorrow, and if it works under most circumstances I think that's enough for now.
 I moved on to the media controller, and to be honest, I thought that was going to be a walk in the park. I kinda thought that it might even be a drag and drop option in SceneBuilder. I was quite wrong. It seems that building a media controller is almost like an entire week long project on its own. Each button and slider needs to be programmed and set up. The tutorials I found detailed an entire hierarchy of tools and controls that would bind together into a single tool. It looks like controlling multiple videos should be possible, which is the bright spot in how complicated this is, but this will take a while to set up properly. Copying someone else's source code isn't an option due to the customization I need.
